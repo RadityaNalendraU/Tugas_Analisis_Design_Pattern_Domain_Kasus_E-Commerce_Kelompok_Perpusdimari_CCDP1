@@ -1,4 +1,4 @@
-package Structural.facade;
+package structural.facade;
 
 public class Client {
     public void clickCheckout() {

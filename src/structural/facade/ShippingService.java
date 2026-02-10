@@ -1,4 +1,4 @@
-package Structural.facade;
+package structural.facade;
 
 public class ShippingService {
     public void calculateFees(String userId) {

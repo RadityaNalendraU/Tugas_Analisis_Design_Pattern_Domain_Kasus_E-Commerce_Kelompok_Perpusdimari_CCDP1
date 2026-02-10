@@ -1,4 +1,4 @@
-package Structural.facade;
+package structural.facade;
 
 public class PaymentGateway {
     public void charge(String userId, double amount) {
