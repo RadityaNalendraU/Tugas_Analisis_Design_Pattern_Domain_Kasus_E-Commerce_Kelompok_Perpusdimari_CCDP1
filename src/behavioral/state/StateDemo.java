@@ -1,5 +1,5 @@
 // src/behavioral/state/OrderState.java
-package src.behavioral.state;
+package behavioral.state;
 
 interface State {
     void next(Order context);
