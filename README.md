@@ -1,6 +1,8 @@
 # Tugas_Analisis_Design_Pattern_Domain_Kasus_E-Commerce_Kelompok_Perpusdimari_CCDP1
 
-Analisis Design Pattern: Domain E-Commerce 🛒Kelompok Perpusdimari - CCDP1Proyek ini bertujuan untuk melakukan analisis dan implementasi berbagai Design Patterns pada domain sistem E-Commerce. Proyek ini merupakan bagian dari Tugas Besar mata kuliah Pattern-Oriented Software Design.🚀 Panduan Penggunaan Git & KolaborasiAgar kerja kelompok berjalan lancar tanpa conflict, berikut adalah panduan perintah Git yang perlu kita gunakan:1. Inisialisasi & RemoteJika kamu baru pertama kali mengambil proyek ini ke lokal:Bash# Clone repositori
+Analisis Design Pattern: Domain E-Commerce 🛒Kelompok Perpusdimari - CCDP1Proyek ini bertujuan untuk melakukan analisis dan implementasi berbagai Design Patterns pada domain sistem E-Commerce. Proyek ini merupakan bagian dari Tugas Besar mata kuliah Pattern-Oriented Software Design.🚀 Panduan Penggunaan Git & KolaborasiAgar kerja kelompok berjalan lancar tanpa conflict, berikut adalah panduan perintah Git yang perlu kita gunakan:1. Inisialisasi & RemoteJika kamu baru pertama kali mengambil proyek ini ke lokal:Bash
+
+# Clone repositori
 git clone https://github.com/RadityaNalendraU/Tugas_Analisis_Design_Pattern_Domain_Kasus_E-Commerce_Kelompok_Perpusdimari_CCDP1.git
 
 # Masuk ke folder proyek
