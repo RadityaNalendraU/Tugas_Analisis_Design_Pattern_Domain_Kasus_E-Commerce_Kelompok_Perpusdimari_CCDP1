@@ -15,8 +15,10 @@ git branch
 
 # Berpindah antar branch
 git checkout nama-branch
+
 3. Mengambil Perubahan Terbaru (Pull)Sebelum mulai ngoding, pastikan kodemu adalah yang paling update dari pusat.Bash# Mengambil update dari branch main
 git pull origin main
+
 4. Menyimpan & Mengirim Perubahan (Push)Setelah selesai mengerjakan tugasmu:Bash# Menambahkan file yang diubah ke area staging
 git add .
 
