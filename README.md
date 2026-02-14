@@ -1,30 +1,57 @@
-# Tugas_Analisis_Design_Pattern_Domain_Kasus_E-Commerce_Kelompok_Perpusdimari_CCDP1
+# 🛒 Analisis Design Pattern - E-Commerce Marketplace System
 
-Analisis Design Pattern: Domain E-Commerce 🛒Kelompok Perpusdimari - CCDP1Proyek ini bertujuan untuk melakukan analisis dan implementasi berbagai Design Patterns pada domain sistem E-Commerce. Proyek ini merupakan bagian dari Tugas Besar mata kuliah Pattern-Oriented Software Design.🚀 Panduan Penggunaan Git & KolaborasiAgar kerja kelompok berjalan lancar tanpa conflict, berikut adalah panduan perintah Git yang perlu kita gunakan:1. Inisialisasi & RemoteJika kamu baru pertama kali mengambil proyek ini ke lokal:Bash
+Proyek ini merupakan implementasi dan analisis mendalam terhadap **12 Design Pattern** yang diterapkan pada domain kasus **E-Commerce**. Proyek ini dikembangkan menggunakan **Pure Java** tanpa bantuan framework untuk menunjukkan pemahaman fundamental terhadap arsitektur perangkat lunak yang *scalable*, *maintainable*, dan *flexible*.
 
-# Clone repositori
-git clone https://github.com/RadityaNalendraU/Tugas_Analisis_Design_Pattern_Domain_Kasus_E-Commerce_Kelompok_Perpusdimari_CCDP1.git
+---
 
-# Masuk ke folder proyek
-cd Tugas_Analisis_Design_Pattern_Domain_Kasus_E-Commerce_Kelompok_Perpusdimari_CCDP1
-2. Manajemen Branch (PENTING!)Jangan langsung push ke branch main! Buatlah branch baru untuk setiap fitur atau pola yang kamu kerjakan.Bash# Membuat branch baru (Contoh: fitur-abstract-factory)
-git checkout -b fitur/nama-pola-kamu
+## 📝 Deskripsi Domain Kasus
+Sistem yang dikembangkan mensimulasikan ekosistem **Marketplace digital**. Fokus utama analisis mencakup:
+* **Manajemen Katalog**: Pengelolaan hirarki kategori dan efisiensi pembuatan varian produk.
+* **Sistem Transaksi**: Integrasi pembayaran pihak ketiga (Payment Gateway) dan manajemen status pesanan.
+* **Logika Bisnis**: Penerapan strategi diskon yang dinamis dan sistem pemberitahuan stok atau promo kepada pelanggan.
 
-# Melihat daftar branch yang ada
-git branch
+---
 
-# Berpindah antar branch
-git checkout nama-branch
+## 👥 Struktur Kelompok & Pembagian Pattern
+Proyek ini dikerjakan oleh **Kelompok Perpusdimari (CCDP-1)** dengan pembagian tanggung jawab sebagai berikut:
 
-3. Mengambil Perubahan Terbaru (Pull)Sebelum mulai ngoding, pastikan kodemu adalah yang paling update dari pusat.Bash# Mengambil update dari branch main
-git pull origin main
+| Anggota | NIM | Pattern yang Diimplementasikan |
+| :--- | :--- | :--- |
+| **Raditya Nalendra Utomo**  | 10122119 | Prototype, Composite, State |
+| **Salman Faris Alhaitami**  | 10122145 | Singleton, Adapter, Strategy  |
+| **Muhammad Febriansyah**    | 10122152 | Abstract Factory, Facade, Chain of Responsibility |
+| **Salem Abdulah Al Oraifi** | 10122153 | Builder, Decorator, Observer |
 
-4. Menyimpan & Mengirim Perubahan (Push)Setelah selesai mengerjakan tugasmu:Bash# Menambahkan file yang diubah ke area staging
-git add .
+---
 
-# Memberikan pesan commit (Jelas dan singkat)
-git commit -m "Add: Implementasi Structural Pattern - Bridge untuk Sistem Pembayaran"
+## 🛠️ Design Pattern yang Diimplementasikan
 
-# Mengirim kode ke GitHub
-git push origin fitur/nama-pola-kamu
-🛠️ Daftar Design Pattern yang DianalisisBerdasarkan pembagian kelompok, berikut adalah pola yang diimplementasikan:KategoriDesign PatternAnggota Penanggung JawabCreationalTulis di siniNamaStructuralTulis di siniNamaBehavioralTulis di siniNama📁 Struktur Folder/src: Source code implementasi pola./docs: Laporan analisis, class diagram, dan hasil testing./assets: Gambar diagram atau screenshot hasil aplikasi.📝 Catatan PentingGunakan VS Code sebagai editor standar agar format kode konsisten.Pastikan setiap pola disertai dengan Class Diagram di folder /docs.Jika ada kendala merge conflict, segera kabari anggota tim lainnya di grup!
+### 1. Creational Patterns (Inisialisasi Objek)
+* **Singleton**: Menjamin hanya ada satu instance untuk manajemen koneksi database e-commerce.
+* **Builder**: Mempermudah pembuatan objek Produk yang memiliki banyak atribut opsional.
+* **Prototype**: Efisiensi pembuatan varian produk (warna/ukuran) melalui kloning objek master.
+* **Abstract Factory**: Menyediakan interface untuk menciptakan keluarga objek (misal: UI Theme Marketplace).
+
+### 2. Structural Patterns (Struktur & Hubungan Objek)
+* **Adapter**: Menghubungkan sistem internal dengan API Payment Gateway pihak ketiga (misal: Midtrans).
+* **Decorator**: Menambahkan fitur tambahan pada produk (misal: bungkus kado atau asuransi) secara dinamis.
+* **Composite**: Mengelola hirarki katalog dari Kategori Utama, Sub-Kategori, hingga Produk Tunggal.
+* **Facade**: Menyederhanakan alur proses Checkout yang kompleks menjadi satu interface sederhana.
+
+### 3. Behavioral Patterns (Interaksi & Tanggung Jawab)
+* **Strategy**: Menerapkan berbagai metode perhitungan diskon (Member, Promo Musiman, Flash Sale).
+* **Observer**: Mengirim notifikasi otomatis kepada pelanggan saat stok barang tersedia atau ada promo.
+* **State**: Mengelola transisi status pesanan (Pending -> Paid -> Shipped) secara terenkapsulasi.
+* **Chain of Responsibility**: Menangani alur validasi pesanan (Cek Stok -> Cek Saldo -> Validasi Alamat).
+
+---
+
+## 📂 Struktur Proyek
+```text
+📦 TugasBesar-DesignPattern
+ ┣ 📂 docs                   # Laporan PDF & Diagram Mermaid (PNG)
+ ┣ 📂 src                    # Kode Sumber Utama Java
+ ┃ ┣ 📂 creational           # Singleton, Builder, Prototype, Abstract Factory
+ ┃ ┣ 📂 structural           # Adapter, Decorator, Composite, Facade
+ ┃ ┗ 📂 behavioral           # Strategy, Observer, State, Chain of Responsibility
+ ┗ 📜 README.md              # Dokumentasi Proyek
